@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 import Image from "next/image";
 import Testimoni from "./Testimoni";
 import ButtonPrimary from "./misc/ButtonPrimary";
-import ButtonOutline from "./misc/ButtonOutline.";
+// import ButtonOutline from "./misc/ButtonOutline.";
 import Maps from "../public/assets/HugeGlobal.svg";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
@@ -74,7 +74,7 @@ const Pricing = () => {
                   <p className="text-2xl text-black-600 text-center mb-4 ">
                     Free
                   </p>
-                  <ButtonOutline>Select</ButtonOutline>
+                  {/* <ButtonOutline>Select</ButtonOutline> */}
                 </div>
               </motion.div>
             </ScrollAnimationWrapper>
@@ -121,7 +121,7 @@ const Pricing = () => {
                   <p className="text-2xl text-black-600 text-center mb-4 ">
                     $9 <span className="text-black-500">/ mo</span>
                   </p>
-                  <ButtonOutline>Select</ButtonOutline>
+                  {/* <ButtonOutline>Select</ButtonOutline> */}
                 </div>
               </motion.div>
             </ScrollAnimationWrapper>
@@ -172,7 +172,7 @@ const Pricing = () => {
                     $12 <span className="text-black-500">/ mo</span>
                   </p>
 
-                  <ButtonOutline>Select</ButtonOutline>
+                  {/* <ButtonOutline>Select</ButtonOutline> */}
                 </div>
               </motion.div>
             </ScrollAnimationWrapper>
