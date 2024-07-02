@@ -7,7 +7,6 @@ import Maps from "../public/assets/HugeGlobal.svg";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
-
 const Pricing = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
@@ -19,261 +18,311 @@ const Pricing = () => {
       <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
         <div className="flex flex-col w-full">
           <ScrollAnimationWrapper>
-            <motion.h3
-              variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed"
-            >
-              Choose Your Plan
-            </motion.h3>
-            <motion.p
-              variants={scrollAnimation}
-              className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
-            >
-              Let's choose the package that is best for you and explore it
-              happily and cheerfully.
-            </motion.p>
-          </ScrollAnimationWrapper>
-          <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
-            <ScrollAnimationWrapper className="flex justify-center">
-              <motion.div
-                variants={scrollAnimation}
-                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
-                whileHover={{
-                  scale: 1.1,
-                  transition: {
-                    duration: 0.2,
-                  },
-                }}
-              >
-                <div className="p-4 lg:p-0 mt-6 lg:mt-16">
-                  <Image
-                    src="/assets/Free.png"
-                    width={145}
-                    height={165}
-                    alt="Free Plan"
-                  />
-                </div>
-                <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                  Free Plan
-                </p>
-                <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
-                  <li className="relative check custom-list my-2">
-                    Unlimited Bandwitch
-                  </li>
-                  <li className="relative check custom-list my-2">
-                    Encrypted Connection
-                  </li>
-                  <li className="relative check custom-list my-2">
-                    No Traffic Logs
-                  </li>
-                  <li className="relative check custom-list my-2">
-                    Works on All Devices
-                  </li>
-                </ul>
-                <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
-                  <p className="text-2xl text-black-600 text-center mb-4 ">
-                    Free
-                  </p>
-                  {/* <ButtonOutline>Select</ButtonOutline> */}
-                </div>
-              </motion.div>
-            </ScrollAnimationWrapper>
-            <ScrollAnimationWrapper className="flex justify-center">
-              <motion.div
-                variants={scrollAnimation}
-                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
-                whileHover={{
-                  scale: 1.1,
-                  transition: {
-                    duration: 0.2,
-                  },
-                }}
-              >
-                <div className="p-4 lg:p-0 mt-6 lg:mt-16">
-                  <Image
-                    src="/assets/Standard.png"
-                    width={145}
-                    height={165}
-                    alt="Standard Plan"
-                  />
-                </div>
-                <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                  Standard Plan{" "}
-                </p>
-                <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
-                  <li className="relative check custom-list my-2">
-                    Unlimited Bandwitch
-                  </li>
-                  <li className="relative check custom-list my-2">
-                    Encrypted Connection
-                  </li>
-                  <li className="relative check custom-list my-2">
-                    No Traffic Logs
-                  </li>
-                  <li className="relative check custom-list my-2">
-                    Works on All Devices
-                  </li>
-                  <li className="relative check custom-list my-2">
-                    Connect Anyware{" "}
-                  </li>
-                </ul>
-                <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
-                  <p className="text-2xl text-black-600 text-center mb-4 ">
-                    $9 <span className="text-black-500">/ mo</span>
-                  </p>
-                  {/* <ButtonOutline>Select</ButtonOutline> */}
-                </div>
-              </motion.div>
-            </ScrollAnimationWrapper>
-            <ScrollAnimationWrapper className="flex justify-center">
-              <motion.div
-                variants={scrollAnimation}
-                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
-                whileHover={{
-                  scale: 1.1,
-                  transition: {
-                    duration: 0.2,
-                  },
-                }}
-              >
-                <div className="p-4 lg:p-0 mt-6 lg:mt-16">
-                  <Image
-                    src="/assets/Premium.png"
-                    width={145}
-                    height={165}
-                    alt="Premium Plan"
-                  />
-                </div>
-                <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                  Premium Plan{" "}
-                </p>
-                <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
-                  <li className="relative check custom-list my-2">
-                    Unlimited Bandwitch
-                  </li>
-                  <li className="relative check custom-list my-2">
-                    Encrypted Connection
-                  </li>
-                  <li className="relative check custom-list my-2">
-                    No Traffic Logs
-                  </li>
-                  <li className="relative check custom-list my-2">
-                    Works on All Devices
-                  </li>
-                  <li className="relative check custom-list my-2">
-                    Connect Anyware{" "}
-                  </li>
-                  <li className="relative check custom-list my-2">
-                    Get New Features{" "}
-                  </li>
-                </ul>
-                <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
-                  <p className="text-2xl text-black-600 text-center mb-4 ">
-                    $12 <span className="text-black-500">/ mo</span>
-                  </p>
-
-                  {/* <ButtonOutline>Select</ButtonOutline> */}
-                </div>
-              </motion.div>
-            </ScrollAnimationWrapper>
-          </div>
-        </div>
-        <div className="flex flex-col w-full my-16">
-          <ScrollAnimationWrapper>
-            <motion.h3
-              variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-9/12 sm:w-6/12 lg:w-4/12 mx-auto"
-            >
-              Huge Global Network of Fast VPN{" "}
-            </motion.h3>
-            <motion.p
-              className="leading-normal  mx-auto my-2 w-10/12 sm:w-7/12 lg:w-6/12"
-              variants={scrollAnimation}
-            >
-              See LaslesVPN everywhere to make it easier for you when you move
-              locations.
-            </motion.p>
-          </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper>
-            <motion.div
-              className="py-12 w-full px-8 mt-16"
-              variants={scrollAnimation}
-            >
-              <Maps className="w-full h-auto" />
-            </motion.div>
-          </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper>
-            <motion.div
-              className="w-full flex justify-evenly items-center mt-4 flex-wrap lg:flex-nowrap"
-              variants={scrollAnimation}
-            >
-              {/* <Netflix className="h-18 w-auto" /> */}
-              <img
-                src="/assets/Icon/amazon.png"
-                className="h-14 w-auto mt-4 lg:mt-2"
-                alt=""
-              />
-              <img
-                src="/assets/Icon/netflix.png"
-                className="h-14 w-auto mt-2 lg:mt-0"
-                alt=""
-              />
-              <img
-                src="/assets/Icon/reddit.png"
-                className="h-12 w-auto mt-2 lg:mt-0"
-                alt=""
-              />
-              <img
-                src="/assets/Icon/discord.png"
-                className="h-14 w-auto mt-2 lg:mt-0"
-                alt=""
-              />
-              <img
-                src="/assets/Icon/spotify.png"
-                className="h-12 w-auto mt-2 lg:mt-0"
-                alt=""
-              />
-            </motion.div>
-          </ScrollAnimationWrapper>
-        </div>
-        <div className="flex flex-col w-full my-16" id="testimoni">
-          <ScrollAnimationWrapper>
-            <motion.h3
-              variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-9/12 sm: lg:w-4/12 mx-auto"
-            >
-              Trusted by Thousands of Happy Customer{" "}
-            </motion.h3>
-            <motion.p
-              variants={scrollAnimation}
-              className="leading-normal mx-auto mb-2 mt-4 w-10/12 sm:w-7/12 lg:w-6/12"
-            >
-              These are the stories of our customers who have joined us with
-              great pleasure when using this crazy feature.
-            </motion.p>
-          </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper className="w-full flex flex-col py-12">
-            <motion.div variants={scrollAnimation}>
-              <Testimoni />
-            </motion.div>
-          </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper className="relative w-full mt-16">
-            <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
-              <div className="absolute rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500">
-                <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
-                  <h5 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
-                    Subscribe Now for <br /> Get Special Features!
-                  </h5>
-                  <p>Let's subscribe with us and find the fun.</p>
-                </div>
-                <ButtonPrimary>Get Started</ButtonPrimary>
+            <motion.h3 variants={scrollAnimation}>
+              <h3 className="text-2xl lg:text-4xl font-medium text-black-600 text-left">
+                프라임 흥신소는{" "}
+                <span className="text-orange-500">체계적인</span> 시스템을
+                추구합니다
+              </h3>
+              <div className="pt-2 text-lg lg:text-2xl my-2 text-orange-500 font-medium text-left">
+                저희 프라임 흥신소는
               </div>
-              <div
-                className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0"
-                style={{ filter: "blur(114px)" }}
-              ></div>
-            </motion.div>
+              <div className="pt-1 text-l lg:text-sm text-gray-400 font-medium text-left">
+                여러분의 고민을 세심히 듣고, 신속 · 정확한 해결책으로 고민
+                해결해드립니다.
+              </div>
+            </motion.h3>
           </ScrollAnimationWrapper>
+          <div className="grid grid-flow-row sm:grid-flow-col grid-cols-2 sm:grid-cols-4 gap-4 lg:gap-2 py-8 lg:py-12 sm:px-0 lg:px-2">
+            <ScrollAnimationWrapper className="flex justify-center">
+              <motion.div
+                variants={scrollAnimation}
+                className="flex flex-row-2 flex-col justify-center items-center rounded-2xl bg-white-500"
+                whileHover={{
+                  scale: 1.1,
+                  transition: {
+                    duration: 0.2,
+                  },
+                }}
+              >
+                <div className="flex justify-center items-center">
+                  <div className="flex flex-col justify-center items-center">
+                    <div className="lg:p-0">
+                      <Image
+                        src="/assets/card1.png"
+                        width={264}
+                        height={213}
+                        alt="Free Plan"
+                      />
+                    </div>
+                    <div className="flex flex-col justify-center items-center">
+                      <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
+                        전화 상담
+                      </p>
+                      <p className="text-md text-gray-400 font-medium capitalize ">
+                        가정고민 및 기업문제
+                      </p>
+                      <p className="text-md mb-10 text-gray-400 font-medium capitalize">
+                        상황파악 및 접수
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </ScrollAnimationWrapper>
+            <ScrollAnimationWrapper className="flex justify-center">
+              <motion.div
+                variants={scrollAnimation}
+                className="flex flex-row-2 flex-col justify-center items-center rounded-2xl bg-white-500"
+                whileHover={{
+                  scale: 1.1,
+                  transition: {
+                    duration: 0.2,
+                  },
+                }}
+              >
+                <div className="flex justify-center items-center">
+                  <div className="flex flex-col justify-center items-center">
+                    <div className="lg:p-0">
+                      <Image
+                        src="/assets/card2.png"
+                        width={264}
+                        height={213}
+                        alt="Free Plan"
+                      />
+                    </div>
+                    <div className="flex flex-col justify-center items-center">
+                      <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
+                      업무 의뢰                      </p>
+                      <p className="text-md text-gray-400 font-medium capitalize ">
+                      계약 후 자료 및
+                      </p>
+                      <p className="text-md mb-10 text-gray-400 font-medium capitalize">
+                      정보 취합
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </ScrollAnimationWrapper>
+            <ScrollAnimationWrapper className="flex justify-center">
+              <motion.div
+                variants={scrollAnimation}
+                className="flex flex-row-2 flex-col justify-center items-center rounded-2xl bg-white-500"
+                whileHover={{
+                  scale: 1.1,
+                  transition: {
+                    duration: 0.2,
+                  },
+                }}
+              >
+                <div className="flex justify-center items-center">
+                  <div className="flex flex-col justify-center items-center">
+                    <div className="lg:p-0">
+                      <Image
+                        src="/assets/card3.png"
+                        width={264}
+                        height={213}
+                        alt="Free Plan"
+                      />
+                    </div>
+                    <div className="flex flex-col justify-center items-center">
+                      <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
+                      업무 분석
+                      </p>
+                      <p className="text-md text-gray-400 font-medium capitalize ">
+                      정보 분석 및
+                      </p>
+                      <p className="text-md mb-10 text-gray-400 font-medium capitalize">
+                      방향 기획과 제시
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </ScrollAnimationWrapper>
+            <ScrollAnimationWrapper className="flex justify-center">
+              <motion.div
+                variants={scrollAnimation}
+                className="flex flex-row-2 flex-col justify-center items-center rounded-2xl bg-white-500"
+                whileHover={{
+                  scale: 1.1,
+                  transition: {
+                    duration: 0.2,
+                  },
+                }}
+              >
+                <div className="flex justify-center items-center">
+                  <div className="flex flex-col justify-center items-center">
+                    <div className="lg:p-0">
+                      <Image
+                        src="/assets/card4.png"
+                        width={264}
+                        height={213}
+                        alt="Free Plan"
+                      />
+                    </div>
+                    <div className="flex flex-col justify-center items-center">
+                      <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
+                      담당팀 선정
+                      </p>
+                      <p className="text-md text-gray-400 font-medium capitalize ">
+                      해당 의뢰
+                      </p>
+                      <p className="text-md mb-10 text-gray-400 font-medium capitalize">
+                      전문요원 선별
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </ScrollAnimationWrapper>
+            </div>
+            <div className="grid grid-flow-row sm:grid-flow-col grid-cols-2 sm:grid-cols-4 gap-4 lg:gap-2 sm:px-0 lg:px-2">
+            <ScrollAnimationWrapper className="flex justify-center">
+              <motion.div
+                variants={scrollAnimation}
+                className="flex flex-row-2 flex-col justify-center items-center rounded-2xl bg-white-500"
+                whileHover={{
+                  scale: 1.1,
+                  transition: {
+                    duration: 0.2,
+                  },
+                }}
+              >
+                <div className="flex justify-center items-center">
+                  <div className="flex flex-col justify-center items-center">
+                    <div className="lg:p-0">
+                      <Image
+                        src="/assets/card1.png"
+                        width={264}
+                        height={213}
+                        alt="Free Plan"
+                      />
+                    </div>
+                    <div className="flex flex-col justify-center items-center">
+                      <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
+                        업무 진행
+                      </p>
+                      <p className="text-md text-gray-400 font-medium capitalize ">
+                        빠른진행과 정확한 업무로
+                      </p>
+                      <p className="text-md mb-10 text-gray-400 font-medium capitalize">
+                        실시간 고객님께 보고
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </ScrollAnimationWrapper>
+            <ScrollAnimationWrapper className="flex justify-center">
+              <motion.div
+                variants={scrollAnimation}
+                className="flex flex-row-2 flex-col justify-center items-center rounded-2xl bg-white-500"
+                whileHover={{
+                  scale: 1.1,
+                  transition: {
+                    duration: 0.2,
+                  },
+                }}
+              >
+                <div className="flex justify-center items-center">
+                  <div className="flex flex-col justify-center items-center">
+                    <div className="lg:p-0">
+                      <Image
+                        src="/assets/card6.png"
+                        width={264}
+                        height={213}
+                        alt="Free Plan"
+                      />
+                    </div>
+                    <div className="flex flex-col justify-center items-center">
+                      <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
+                      자료 수집                      </p>
+                      <p className="text-md text-gray-400 font-medium capitalize ">
+                      의뢰에 대한 관련
+                      </p>
+                      <p className="text-md mb-10 text-gray-400 font-medium capitalize">
+                      모든 정보 및 자료 수집
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </ScrollAnimationWrapper>
+            <ScrollAnimationWrapper className="flex justify-center">
+              <motion.div
+                variants={scrollAnimation}
+                className="flex flex-row-2 flex-col justify-center items-center rounded-2xl bg-white-500"
+                whileHover={{
+                  scale: 1.1,
+                  transition: {
+                    duration: 0.2,
+                  },
+                }}
+              >
+                <div className="flex justify-center items-center">
+                  <div className="flex flex-col justify-center items-center">
+                    <div className="lg:p-0">
+                      <Image
+                        src="/assets/card7.png"
+                        width={264}
+                        height={213}
+                        alt="Free Plan"
+                      />
+                    </div>
+                    <div className="flex flex-col justify-center items-center">
+                      <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
+                      의뢰 보고
+                      </p>
+                      <p className="text-md text-gray-400 font-medium capitalize ">
+                      업무 진행에 따른
+                      </p>
+                      <p className="text-md mb-10 text-gray-400 font-medium capitalize">
+                      최종결과를 고객님께 보고
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </ScrollAnimationWrapper>
+            <ScrollAnimationWrapper className="flex justify-center">
+              <motion.div
+                variants={scrollAnimation}
+                className="flex flex-row-2 flex-col justify-center items-center rounded-2xl bg-white-500"
+                whileHover={{
+                  scale: 1.1,
+                  transition: {
+                    duration: 0.2,
+                  },
+                }}
+              >
+                <div className="flex justify-center items-center">
+                  <div className="flex flex-col justify-center items-center">
+                    <div className="lg:p-0">
+                      <Image
+                        src="/assets/card8.png"
+                        width={264}
+                        height={213}
+                        alt="Free Plan"
+                      />
+                    </div>
+                    <div className="flex flex-col justify-center items-center">
+                      <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
+                      관련정보 폐기
+                      </p>
+                      <p className="text-md text-gray-400 font-medium capitalize ">
+                      의뢰에 대한 관련
+                      </p>
+                      <p className="text-md mb-10 text-gray-400 font-medium capitalize">
+                      모든 정보 폐기 처분
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </ScrollAnimationWrapper>
+            </div>
         </div>
       </div>
     </div>
