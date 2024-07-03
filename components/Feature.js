@@ -37,19 +37,19 @@ const Feature = () => {
             className="flex flex-col items-start justify-center mr-auto w-full lg:w-9/12"
             variants={scrollAnimation}
           >
-            <h3 className="text-3xl lg:text-4xl font-medium text-black-600">
+            <h3 className="text-2xl lg:text-4xl font-medium text-black-600">
               주요 업무
             </h3>
-            <div className="pt-2 text-xl lg: text-2xl my-2 text-orange-500 font-medium ">
+            <div className="pt-2 text-lg lg:text-2xl my-2 text-orange-500 font-medium ">
               여러분은 어떤 고민이 있으신가요?
             </div>
-            <div className="pt-3 text-md lg: text-l text-gray-400 font-medium ">
+            <div className="pt-3 text-sm lg:text-md text-gray-400 font-medium ">
               수많은 사건을 처리하여 오면서 의뢰인들이 원하는 것이 무엇인지
             </div>
-            <div className="mb-6 text-md lg: text-l text-gray-400 font-medium ">
+            <div className="mb-6 text-sm lg:text-md text-gray-400 font-medium ">
               무엇인지 정확하게 파악하고 있습니다.
             </div>
-            <ul className="text-black-500 font-md self-start list-inside ml-8">
+            <ul className="text-black-500 font-md text-sm lg:text-md lg: xl:text-lg self-start list-inside ml-8">
               {features.map((feature, index) => (
                 <motion.li
                   className="relative custom-list"

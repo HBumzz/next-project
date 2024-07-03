@@ -46,7 +46,7 @@ const Hero = ({
             <h1 className="pt-6 text-2xl lg:text-3xl xl:text-4xl font-medium text-black-600 leading-normal">
               완벽한 사실조사, 깔끔한 해결
             </h1>
-            <h2 className="pt-6 text-lg lg:text-xl xl:text-2xl text-black-500 mb-6 leading-normal">
+            <h2 className="pt-6 text-sm lg:text-md xl:text-xl text-black-500 mb-6 leading-normal">
               신의, 성실 비밀보장의 원칙으로 문제를 해결해 드립니다.
             </h2>
             {/* <ButtonPrimary>Get Started</ButtonPrimary> */}
