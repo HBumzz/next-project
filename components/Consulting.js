@@ -117,11 +117,11 @@ const Cunsulting = () => {
               </div>
               <div className="mt-4 flex justify-center">
                 <Image
-                  src="/assets/Logo_last.png"
+                  src="/assets/real_logo.png"
                   width={225}
                   height={77}
-                  objectFit="contain"
-                  alt="Logo"
+                  alt="Free Plan"
+                  className="md:h-4 md:w-8"
                 />
               </div>
             </motion.h3>

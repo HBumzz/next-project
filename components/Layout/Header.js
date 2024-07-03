@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link as LinkScroll } from "react-scroll";
+import Image from "next/image";
 import Logo from "../../public/assets/Logo_first.svg";
 import Logo2 from "../../public/assets/Logo 2.svg";
 const Header = () => {
@@ -24,8 +25,16 @@ const Header = () => {
           (scrollActive ? "shadow-md pt-0" : "pt-4")
         }
       >
-        <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 lg:py-0 px-0">
-          <Logo2 className="" />
+        <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col lg:py-0 px-0">
+          <div className="">
+            <Image
+              src="/assets/real_logo.png"
+              width={225}
+              height={77}
+              alt="Free Plan"
+              className="md:h-4 md:w-8"
+            />
+          </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500 items-center">
             <LinkScroll
               activeClass="active"
