@@ -89,12 +89,13 @@ const Pricing = () => {
                     </div>
                     <div className="flex flex-col justify-center items-center">
                       <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                      업무 의뢰                      </p>
+                        업무 의뢰{" "}
+                      </p>
                       <p className="text-md text-gray-400 font-medium capitalize ">
-                      계약 후 자료 및
+                        계약 후 자료 및
                       </p>
                       <p className="text-md mb-10 text-gray-400 font-medium capitalize">
-                      정보 취합
+                        정보 취합
                       </p>
                     </div>
                   </div>
@@ -124,13 +125,13 @@ const Pricing = () => {
                     </div>
                     <div className="flex flex-col justify-center items-center">
                       <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                      업무 분석
+                        업무 분석
                       </p>
                       <p className="text-md text-gray-400 font-medium capitalize ">
-                      정보 분석 및
+                        정보 분석 및
                       </p>
                       <p className="text-md mb-10 text-gray-400 font-medium capitalize">
-                      방향 기획과 제시
+                        방향 기획과 제시
                       </p>
                     </div>
                   </div>
@@ -160,21 +161,21 @@ const Pricing = () => {
                     </div>
                     <div className="flex flex-col justify-center items-center">
                       <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                      담당팀 선정
+                        담당팀 선정
                       </p>
                       <p className="text-md text-gray-400 font-medium capitalize ">
-                      해당 의뢰
+                        해당 의뢰
                       </p>
                       <p className="text-md mb-10 text-gray-400 font-medium capitalize">
-                      전문요원 선별
+                        전문요원 선별
                       </p>
                     </div>
                   </div>
                 </div>
               </motion.div>
             </ScrollAnimationWrapper>
-            </div>
-            <div className="grid grid-flow-row sm:grid-flow-col grid-cols-2 sm:grid-cols-4 gap-4 lg:gap-2 sm:px-0 lg:px-2">
+          </div>
+          <div className="grid grid-flow-row sm:grid-flow-col grid-cols-2 sm:grid-cols-4 gap-4 lg:gap-2 sm:px-0 lg:px-2">
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div
                 variants={scrollAnimation}
@@ -190,7 +191,7 @@ const Pricing = () => {
                   <div className="flex flex-col justify-center items-center">
                     <div className="lg:p-0">
                       <Image
-                        src="/assets/card1.png"
+                        src="/assets/card5.png"
                         width={264}
                         height={213}
                         alt="Free Plan"
@@ -234,12 +235,13 @@ const Pricing = () => {
                     </div>
                     <div className="flex flex-col justify-center items-center">
                       <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                      자료 수집                      </p>
+                        자료 수집{" "}
+                      </p>
                       <p className="text-md text-gray-400 font-medium capitalize ">
-                      의뢰에 대한 관련
+                        의뢰에 대한 관련
                       </p>
                       <p className="text-md mb-10 text-gray-400 font-medium capitalize">
-                      모든 정보 및 자료 수집
+                        모든 정보 및 자료 수집
                       </p>
                     </div>
                   </div>
@@ -269,13 +271,13 @@ const Pricing = () => {
                     </div>
                     <div className="flex flex-col justify-center items-center">
                       <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                      의뢰 보고
+                        의뢰 보고
                       </p>
                       <p className="text-md text-gray-400 font-medium capitalize ">
-                      업무 진행에 따른
+                        업무 진행에 따른
                       </p>
                       <p className="text-md mb-10 text-gray-400 font-medium capitalize">
-                      최종결과를 고객님께 보고
+                        최종결과를 고객님께 보고
                       </p>
                     </div>
                   </div>
@@ -305,20 +307,20 @@ const Pricing = () => {
                     </div>
                     <div className="flex flex-col justify-center items-center">
                       <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                      관련정보 폐기
+                        관련정보 폐기
                       </p>
                       <p className="text-md text-gray-400 font-medium capitalize ">
-                      의뢰에 대한 관련
+                        의뢰에 대한 관련
                       </p>
                       <p className="text-md mb-10 text-gray-400 font-medium capitalize">
-                      모든 정보 폐기 처분
+                        모든 정보 폐기 처분
                       </p>
                     </div>
                   </div>
                 </div>
               </motion.div>
             </ScrollAnimationWrapper>
-            </div>
+          </div>
         </div>
       </div>
     </div>
