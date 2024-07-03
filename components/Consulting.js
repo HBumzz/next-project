@@ -11,7 +11,7 @@ import Logo from "../public/assets/Logo_first.svg";
 
 const Cunsulting = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
-
+  const kakaoChatLink = "https://pf.kakao.com/choi12920";
   return (
     <div
       className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
@@ -34,74 +34,86 @@ const Cunsulting = () => {
           <ScrollAnimationWrapper>
             <motion.h3 variants={scrollAnimation}>
               <div className="flex flex-wrap justify-center">
-                <div className="flex justify-center px-2 sm:px-12">
-                  <div className="grid-row-2 items-center ">
-                    <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto">
-                      <Image
-                        src="/assets/kakao_img.png"
-                        layout="fill"
-                        objectFit="contain"
-                        alt="Free Plan"
-                      />
-                    </div>
-                    <div className="my-2 text-[12px] md:text-md font-medium text-center">
-                      카카오톡 문의
-                    </div>
-                  </div>
-                </div>
-                <div className="flex justify-center px-2 sm:px-12">
-                  <div className="grid-row-2 items-center ">
-                    <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto">
-                      <Image
-                        src="/assets/call_img.png"
-                        layout="fill"
-                        objectFit="contain"
-                        alt="Free Plan"
-                      />
-                    </div>
-                    <div className="my-2 text-[12px] md:text-md font-medium text-center">
-                      전화 문의
+                <a
+                  href={kakaoChatLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:underline"
+                >
+                  <div className="flex justify-center px-2 sm:px-12">
+                    <div className="grid-row-2 items-center ">
+                      <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto">
+                        <Image
+                          src="/assets/kakao_img.png"
+                          layout="fill"
+                          objectFit="contain"
+                          alt="Free Plan"
+                        />
+                      </div>
+                      <div className="my-2 text-[12px] md:text-md font-medium text-center">
+                        카카오톡 문의
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="flex justify-center px-2 sm:px-12">
-                  <div className="grid-row-2 items-center ">
-                    <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto">
-                      <Image
-                        src="/assets/message_img.png"
-                        layout="fill"
-                        objectFit="contain"
-                        alt="Free Plan"
-                      />
-                    </div>
-                    <div className="my-2 text-[12px] md:text-md font-medium text-center">
-                      문자메세지 문의
-                    </div>
-                  </div>
-                </div>
-                <div className="flex justify-center px-2 sm:px-12">
-                  <div className="grid-row-2 items-center ">
-                    <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto">
-                      <Image
-                        src="/assets/telegram_img.png"
-                        layout="fill"
-                        objectFit="contain"
-                        alt="Free Plan"
-                      />
-                    </div>
-                    <div className="my-2 text-[12px] md:text-md font-medium text-center">
-                      텔레그램 문의
+                </a>
+                <button onclick="window.location.href='tel:+1234567890'">
+                  <div className="flex justify-center px-2 sm:px-12">
+                    <div className="grid-row-2 items-center ">
+                      <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto">
+                        <Image
+                          src="/assets/call_img.png"
+                          layout="fill"
+                          objectFit="contain"
+                          alt="Free Plan"
+                        />
+                      </div>
+                      <div className="my-2 text-[12px] md:text-md font-medium text-center">
+                        전화 문의
+                      </div>
                     </div>
                   </div>
-                </div>
+                </button>
+                <button onclick="window.location.href='sms:+01050441292'">
+                  <div className="flex justify-center px-2 sm:px-12">
+                    <div className="grid-row-2 items-center ">
+                      <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto">
+                        <Image
+                          src="/assets/message_img.png"
+                          layout="fill"
+                          objectFit="contain"
+                          alt="Free Plan"
+                        />
+                      </div>
+                      <div className="my-2 text-[12px] md:text-md font-medium text-center">
+                        문자메세지 문의
+                      </div>
+                    </div>
+                  </div>
+                </button>
+                <button onclick="window.location.href='https://t.me/username'">
+                  <div className="flex justify-center px-2 sm:px-12">
+                    <div className="grid-row-2 items-center ">
+                      <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto">
+                        <Image
+                          src="/assets/telegram_img.png"
+                          layout="fill"
+                          objectFit="contain"
+                          alt="Free Plan"
+                        />
+                      </div>
+                      <div className="my-2 text-[12px] md:text-md font-medium text-center">
+                        텔레그램 문의
+                      </div>
+                    </div>
+                  </div>
+                </button>
               </div>
               <div className="mt-4 flex justify-center">
-          <Logo className="h-24" />
-        </div>
+                <Logo className="h-24" />
+              </div>
             </motion.h3>
           </ScrollAnimationWrapper>
         </div>
-
       </div>
     </div>
   );

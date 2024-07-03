@@ -9,9 +9,9 @@ import Consulting from "../components/Consulting.js";
 export default function Home() {
   return (
     <>
-      <SeoHead title="LaslesVPN Landing Page" />
-        <Hero />
+      <SeoHead title="프라임 흥신소" />
       <Layout>
+        <Hero />
         <Introduce />
         <Feature />
         <Pricing />
