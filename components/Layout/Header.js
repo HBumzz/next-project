@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link as LinkScroll } from "react-scroll";
 import Logo from "../../public/assets/Logo_first.svg";
-
+import Logo2 from "../../public/assets/Logo 2.svg";
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);
   const [scrollActive, setScrollActive] = useState(false);
@@ -25,7 +25,7 @@ const Header = () => {
         }
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 lg:py-0 px-0">
-          <Logo className="h-16" />
+          <Logo2 className="" />
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500 items-center">
             <LinkScroll
               activeClass="active"
