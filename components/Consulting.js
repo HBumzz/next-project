@@ -116,7 +116,13 @@ const Cunsulting = () => {
                 </a>
               </div>
               <div className="mt-4 flex justify-center">
-                <Logo />
+                <Image
+                  src="/assets/Logo_last.png"
+                  width={225}
+                  height={77}
+                  objectFit="contain"
+                  alt="Logo"
+                />
               </div>
             </motion.h3>
           </ScrollAnimationWrapper>
