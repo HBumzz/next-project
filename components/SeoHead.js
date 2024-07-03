@@ -5,10 +5,9 @@ import { useRouter } from "next/router";
 const defaultMeta = {
   title: "프라임 흥신소",
   siteName: "프라임 흥신소",
-  description:
-    "Landing page VPN LaslesVPN Best VPN For Privacy, Country and Cheapest",
+  description: "대한민국 No.1 흥신소. 프라임 흥신소입니다.",
   // change base url of your web (without '/' at the end)
-  url: "https://prime-detective-agency.vercel.app/",
+  url: "https://prime-detective-agency.vercel.app",
   type: "website",
   robots: "follow, index",
   // change with url of your image (recommended dimension = 1.91:1)
@@ -80,13 +79,13 @@ const SeoHead = (props) => {
         <link key={linkProps.href} {...linkProps} />
       ))}
       {/* Windows 8 app icon */}
-      <meta name="msapplication-TileColor" content="#F53838" />
+      <meta name="msapplication-TileColor" content="#444BD3" />
       <meta
         name="msapplication-TileImage"
         content="/favicon/ms-icon-144x144.png"
       />
       {/* Accent color on supported browser */}
-      <meta name="theme-color" content="#F53838" />
+      <meta name="theme-color" content="#444BD3" />
     </Head>
   );
 };
