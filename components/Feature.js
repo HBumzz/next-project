@@ -3,7 +3,7 @@ import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
-import Checkbox from "../public/assets/checkbox.svg";
+import Checkbox from "../public/assets/Checkbox.svg";
 const features = [
   "이혼소송에 따른 증거자료가 필요한 경우",
   "배우자의 불륜이나 바람이 의심되는 경우",
