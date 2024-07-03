@@ -46,7 +46,7 @@ const Cunsulting = () => {
                           alt="Free Plan"
                         />
                       </div>
-                      <div className="my-2 text-[12px] lg:text-lg font-medium text-center">
+                      <div className="my-2 text-xs lg:text-lg font-medium text-center">
                         카카오톡 문의
                       </div>
                     </div>
@@ -66,7 +66,7 @@ const Cunsulting = () => {
                           alt="Free Plan"
                         />
                       </div>
-                      <div className="my-2 text-[12px] lg:text-lg font-medium text-center">
+                      <div className="my-2 text-xs lg:text-lg font-medium text-center">
                         전화 문의
                       </div>
                     </div>
@@ -86,7 +86,7 @@ const Cunsulting = () => {
                           alt="Free Plan"
                         />
                       </div>
-                      <div className="my-2 text-[12px] lg:text-lg font-medium text-center">
+                      <div className="my-2 text-xs lg:text-lg font-medium text-center">
                         문자메세지 문의
                       </div>
                     </div>
@@ -108,7 +108,7 @@ const Cunsulting = () => {
                           alt="Free Plan"
                         />
                       </div>
-                      <div className="my-2 text-[12px] lg:text-lg font-medium text-center">
+                      <div className="my-2 text-xs lg:text-lg font-medium text-center">
                         텔레그램 문의
                       </div>
                     </div>
