@@ -26,7 +26,7 @@ const Introduce = () => {
             className="flex flex-col items-start justify-center mr-auto w-full "
             variants={scrollAnimation}
           >
-            <Logo style={{ width: "80%", height: "auto" }} />
+            <Logo className="w-60" />
             <div className="pl-6 pt-2 md: text-md lg:text-lg xl:text-xl sm:text-md my-2 text-black-500 font-medium">
               <div>쉽지않은 결정인 걸 알기에 당신의 말못할 고민!</div>
               <div className="mb-6">
