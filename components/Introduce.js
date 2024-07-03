@@ -3,7 +3,6 @@ import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
-import Checkbox from "../public/assets/checkbox.svg";
 import tamImage from "../public/assets/tam_image.png";
 import Logo from "../public/assets/Logo_first.svg";
 const features = [
