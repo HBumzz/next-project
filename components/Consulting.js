@@ -7,7 +7,7 @@ import Logo from "../public/assets/Logo_first.svg";
 
 const Cunsulting = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
-  const kakaoChatLink = "https://";
+  const kakaoChatLink = "https://open.kakao.com/o/sBWcULAg";
   return (
     <div
       className="bg-gradient-to-b from-white-300 to-white-500 w-full py-36"
@@ -52,7 +52,7 @@ const Cunsulting = () => {
                     </div>
                   </div>
                 </a>
-                <button onclick="window.location.href='tel:+1234567890'">
+                <a href="tel:+821021548941" className="button-link">
                   <div className="flex justify-center px-2 md:px-12">
                     <div className="grid-row-2 items-center ">
                       <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto">
@@ -68,8 +68,8 @@ const Cunsulting = () => {
                       </div>
                     </div>
                   </div>
-                </button>
-                <button onclick="window.location.href='sms:+01050441292'">
+                </a>
+                <a href="sms:+821021548941" className="button-link">
                   <div className="flex justify-center px-2 md:px-12">
                     <div className="grid-row-2 items-center ">
                       <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto">
@@ -85,8 +85,13 @@ const Cunsulting = () => {
                       </div>
                     </div>
                   </div>
-                </button>
-                <button onclick="window.location.href='https://t.me/username'">
+                </a>
+                <a
+                  href="https://t.me/+M5jO9KziK6UyZWE1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="button-link"
+                >
                   <div className="flex justify-center px-2 md:px-12">
                     <div className="grid-row-2 items-center ">
                       <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto">
@@ -102,7 +107,7 @@ const Cunsulting = () => {
                       </div>
                     </div>
                   </div>
-                </button>
+                </a>
               </div>
               <div className="mt-4 flex justify-center">
                 <Logo className="h-24" />
