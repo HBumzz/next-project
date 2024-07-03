@@ -34,15 +34,14 @@ const Header = () => {
               smooth={true}
               duration={1000}
               onSetActive={() => {
-                setActiveLink("about");
+                setActiveLink("Introduce");
               }}
               className={
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-                (activeLink === "about"
+                (activeLink === "Introduce"
                   ? " text-orange-500 animation-active "
                   : " text-black-500 hover:text-orange-500 ")
               }
-              offset={-40}
             >
               프라임 흥신소 소개
             </LinkScroll>
@@ -79,7 +78,6 @@ const Header = () => {
                   ? " text-orange-500 animation-active "
                   : " text-black-500 hover:text-orange-500 ")
               }
-              offset={-60}
             >
               업무 절차
             </LinkScroll>
@@ -107,20 +105,20 @@ const Header = () => {
       {/* Mobile Navigation */}
 
       <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 px-4 sm:px-8 shadow-t ">
-        <div className="bg-white-500 sm:px-3">
+        <div className="bg-white-500 sm:px-3 pb-2">
           <ul className="flex w-full justify-between items-center text-black-500">
             <LinkScroll
               activeClass="active"
-              to="about"
+              to="Introduce"
               spy={true}
               smooth={true}
               duration={1000}
               onSetActive={() => {
-                setActiveLink("about");
+                setActiveLink("Introduce");
               }}
               className={
                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
-                (activeLink === "about"
+                (activeLink === "Introduce"
                   ? "  border-orange-500 text-orange-500"
                   : " border-transparent")
               }
@@ -207,7 +205,7 @@ const Header = () => {
             </LinkScroll>
             <LinkScroll
               activeClass="active"
-              to="testimoni"
+              to="Consulting"
               spy={true}
               smooth={true}
               duration={1000}

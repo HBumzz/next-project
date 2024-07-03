@@ -11,13 +11,13 @@ import Logo from "../public/assets/Logo_first.svg";
 
 const Cunsulting = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
-  const kakaoChatLink = "https://pf.kakao.com/choi12920";
+  const kakaoChatLink = "https://";
   return (
     <div
-      className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
+      className="bg-gradient-to-b from-white-300 to-white-500 w-full py-36"
       id="Consulting"
     >
-      <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
+      <div className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
         <div className="flex flex-col w-full">
           <ScrollAnimationWrapper>
             <motion.h3 variants={scrollAnimation}>
@@ -40,7 +40,7 @@ const Cunsulting = () => {
                   rel="noopener noreferrer"
                   className="text-blue-500 hover:underline"
                 >
-                  <div className="flex justify-center px-2 sm:px-12">
+                  <div className="flex justify-center px-2 md:px-12">
                     <div className="grid-row-2 items-center ">
                       <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto">
                         <Image
@@ -57,7 +57,7 @@ const Cunsulting = () => {
                   </div>
                 </a>
                 <button onclick="window.location.href='tel:+1234567890'">
-                  <div className="flex justify-center px-2 sm:px-12">
+                  <div className="flex justify-center px-2 md:px-12">
                     <div className="grid-row-2 items-center ">
                       <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto">
                         <Image
@@ -74,7 +74,7 @@ const Cunsulting = () => {
                   </div>
                 </button>
                 <button onclick="window.location.href='sms:+01050441292'">
-                  <div className="flex justify-center px-2 sm:px-12">
+                  <div className="flex justify-center px-2 md:px-12">
                     <div className="grid-row-2 items-center ">
                       <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto">
                         <Image
@@ -91,7 +91,7 @@ const Cunsulting = () => {
                   </div>
                 </button>
                 <button onclick="window.location.href='https://t.me/username'">
-                  <div className="flex justify-center px-2 sm:px-12">
+                  <div className="flex justify-center px-2 md:px-12">
                     <div className="grid-row-2 items-center ">
                       <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto">
                         <Image
