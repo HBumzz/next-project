@@ -3,7 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
-import Logo from "../public/assets/Logo_first.svg";
+import Logo from "../public/assets/Logo_first copy.svg";
 
 const Cunsulting = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -116,7 +116,7 @@ const Cunsulting = () => {
                 </a>
               </div>
               <div className="mt-4 flex justify-center">
-                <Logo className="h-24" />
+                <Logo />
               </div>
             </motion.h3>
           </ScrollAnimationWrapper>
